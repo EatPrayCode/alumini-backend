@@ -8,8 +8,7 @@
     "url": "https://github.com/cornflourblue/node-role-based-authorization-api.git"
   },
   "scripts": {
-    "start": "nodemon ./server.js",
-    "heroku-postbuild": "npm start"
+    "start": "nodemon ./server.js"
   },
   "dependencies": {
     "body-parser": "^1.18.3",
