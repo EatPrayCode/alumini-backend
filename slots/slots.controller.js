@@ -46,6 +46,14 @@ router.post('/', (req, res) => {
         updateIntoMongoDB(req, res);
 });
 
+//Router Controller for UPDATE request
+router.delete('/', (req, res) => {
+    Course.deleteOne({_id: req.body._id}, (err, doc) => {
+        if (!err) res.status(200).json({});
+        else console.log(err);
+    });
+});
+
 //Creating function to insert data into MongoDB
 function insertIntoMongoDB(req, res) {
     var course = new Course();
