@@ -68,11 +68,7 @@ function updateIntoMongoDB(req, res) {
         else {
             if (err.name == 'ValidationError') {
                 handleValidationError(err, req.body);
-                res.render("course/courseAddEdit", {
-                    //Retaining value to be displayed in the child view
-                    viewTitle: 'Update Course Details',
-                    employee: req.body
-                });
+                res.status(200).json(req.body);
             }
             else
                 console.log('Error during updating the record: ' + err);

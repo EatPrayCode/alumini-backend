@@ -1,20 +1,22 @@
 ﻿const config = require('config.json');
 const jwt = require('jsonwebtoken');
 const Role = require('_helpers/role');
+
 const colors = {
     red: {
-      primary: '#ad2121',
-      secondary: '#FAE3E3'
+        primary: '#ad2121',
+        secondary: '#FAE3E3'
     },
     blue: {
-      primary: '#1e90ff',
-      secondary: '#D1E8FF'
+        primary: '#1e90ff',
+        secondary: '#D1E8FF'
     },
     yellow: {
-      primary: '#e3bc08',
-      secondary: '#FDF1BA'
+        primary: '#e3bc08',
+        secondary: '#FDF1BA'
     }
-  };
+};
+
 // users hardcoded for simplicity, store in a db for production applications
 const slots = [
     {
@@ -24,14 +26,14 @@ const slots = [
         title: 'One day excluded event',
         color: colors.red,
         allDay: true
-      },
-      {
+    },
+    {
         id: 2,
         start: new Date('2016-01-01'),
         end: new Date('2016-01-09'),
         title: 'Multiple weeks event',
         allDay: true
-      }
+    }
 ];
 
 module.exports = {
