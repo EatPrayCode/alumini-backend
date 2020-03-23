@@ -1,5 +1,9 @@
-# node-role-based-authorization-api
+# Angular Assignment: Alumini Booking Backend
 
-Node.js Role Based Authorization API
+## Development server
 
-For documentation and instructions check out http://jasonwatmore.com/post/2018/11/28/nodejs-role-based-authorization-tutorial-with-example-api
+Run `yarn` to install dependencies.
+
+Run `npm start` for a dev server. The app will automatically reload if you change any of the source files.
+
+Frontend code : https://github.com/EatPrayCode/aluminifrontend
